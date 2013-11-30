@@ -35,7 +35,10 @@
                                 <include>exhibitor.properties</include>
                             </includes>
                             <targetPath>WEB-INF/classes</targetPath>
-                        </overlay>
+                        </overlay>                    
+                        <packagingExcludes>
+                            WEB-INF/lib/servlet-api-*.jar
+                        </packagingExcludes>
                     </overlays>
                 </configuration>
             </plugin>
